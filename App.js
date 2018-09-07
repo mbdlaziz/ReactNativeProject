@@ -15,12 +15,14 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Judul/>
+        <Judul type="BIODATA"/>
+        <Judul type="LOGIN"/>
+        <Judul type="FORM"/>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.welcome}>Nama  : Muhammad Abdul Aziz</Text>
         <Text style={styles.welcome}>Kelas : XI RPL 1</Text>
         <Text style={styles.welcome}>No  : 23</Text>
-        <Image style = {{width : 300, height : 400}}
+        <Image style = {{width : 250, height : 300}}
         source={require('./fotoku.jpg')}/>
       </View>
     );
@@ -36,7 +38,8 @@ const styles = StyleSheet.create({
   },
   welcome: {
     fontSize: 20,
-    textAlign: 'center',
+    color: "black",
+    textAlign: 'left',
     margin: 10,
   },
 });

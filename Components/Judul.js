@@ -4,16 +4,20 @@ import {Text} from 'react-native';
 class Judul extends Component{
 	render(){
 		return(
-			<Text style={salon.judul}>BOIDATA</Text>
+			<Text style={salon.judul}>{this.props.type}</Text>
 		)
 	}
 }
 const salon = {
 	judul: {
-		color: '#f00',
+		color: 'black',
 		fontSize: 50,
 		fontWeight: 'bold',
-		backgroundColor: '#0f0'
+		marginBottom : 20,
+		marginTop : 10,
+		paddingLeft : 70,
+		paddingRight : 70,
+		backgroundColor: 'grey'
 	}
 }
 export default Judul;
